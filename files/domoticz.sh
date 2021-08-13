@@ -41,4 +41,4 @@ chmod 755 /etc/init.d/domoticz
 
 chown -R domoticz:domoticz /etc/domoticz
 echo "Installation complete, reboot"
-reboot
+# reboot
