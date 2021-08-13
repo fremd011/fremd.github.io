@@ -19,14 +19,14 @@ usermod -a -G dialout domoticz
 
 echo "Add plugin"
 cd /etc/domoticz/plugins/
-DIR="Domoticz-Zigate"
+DIR="iDetect"
 if [ -d "$DIR" ]; then
   # Take action if $DIR exists. #
   echo "previous installation find remove it"
-  rm -r /etc/domoticz/plugins/Domoticz-Zigate
+  rm -r /etc/domoticz/plugins/iDetect
 fi
-git clone https://github.com/pipiche38/Domoticz-Zigate.git --depth 1
-chmod +x Domoticz-Zigate/plugin.py
+git clone https://github.com/d-EScape/Domoticz_iDetect.git iDetect
+chmod +x iDetect/plugin.py
 
 echo "Moving files and download domoticz config"
 mv /var/lib/domoticz/domoticz.db /etc/domoticz/domoticz.db
