@@ -5,7 +5,7 @@ cd /tmp/
 echo "Download files"
 wget https://github.com/openlumi/openlumi.github.io/raw/master/files/liblua5.3-5.3_5.3.5-4_arm_cortex-a9_neon.ipk
 wget https://github.com/openlumi/openlumi.github.io/raw/master/files/lua5.3_5.3.5-4_arm_cortex-a9_neon.ipk
-wget https://github.com/openlumi/openlumi.github.io/raw/master/files/domoticz_2020.2-3_arm_cortex-a9_neon.ipk
+wget https://github.com/openlumi/openlumi.github.io/raw/master/files/domoticz_2021.1-1_arm_cortex-a9_neon.ipk
 
 echo "start installation"
 opkg update
