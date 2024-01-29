@@ -5,14 +5,14 @@ cd /tmp/
 echo "Download files"
 wget https://github.com/fremd011/openlumi.github.io/raw/master/files/liblua5.3-5.3_5.3.5-4_arm_cortex-a9_neon.ipk
 wget https://github.com/fremd011/openlumi.github.io/raw/master/files/lua5.3_5.3.5-4_arm_cortex-a9_neon.ipk
-wget https://github.com/fremd011/openlumi.github.io/raw/master/files/domoticz_2022.1-5_arm_cortex-a9_neon.ipk
+wget https://github.com/fremd011/openlumi.github.io/raw/master/files/domoticz_2022.2-1_arm_cortex-a9_neon.ipk
 
 echo "start installation"
 opkg update
 opkg install curl git-http libmbedtls12 libustream-mbedtls shadow-usermod
 opkg install /tmp/liblua5.3-5.3_5.3.5-4_arm_cortex-a9_neon.ipk
 opkg install /tmp/lua5.3_5.3.5-4_arm_cortex-a9_neon.ipk
-opkg install /tmp/domoticz_2022.1-5_arm_cortex-a9_neon.ipk
+opkg install /tmp/domoticz_2022.2-1_arm_cortex-a9_neon.ipk
 
 usermod -a -G audio domoticz
 usermod -a -G dialout domoticz
